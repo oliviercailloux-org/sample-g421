@@ -5,7 +5,7 @@ package io.github.oliviercailloux.g421;
  */
 public interface DiceRoller {
 	/**
-	 * Roll the three dice.
+	 * Rolls the three dice.
 	 */
 	void roll();
 
@@ -15,7 +15,7 @@ public interface DiceRoller {
 	 * @return a number between 1 and 6.
 	 * @throws IllegalStateException iff the dice have not been rolled yet.
 	 */
-	int first() throws IllegalStateException;
+	int first();
 
 	/**
 	 * Returns the result of the last roll shown by the second die.
@@ -23,7 +23,7 @@ public interface DiceRoller {
 	 * @return a number between 1 and 6.
 	 * @throws IllegalStateException iff the dice have not been rolled yet.
 	 */
-	int second() throws IllegalStateException;
+	int second();
 
 	/**
 	 * Returns the result of the last roll shown by the third die.
@@ -31,5 +31,5 @@ public interface DiceRoller {
 	 * @return a number between 1 and 6.
 	 * @throws IllegalStateException iff the dice have not been rolled yet.
 	 */
-	int third() throws IllegalStateException;
+	int third();
 }
